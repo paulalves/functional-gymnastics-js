@@ -1,0 +1,20 @@
+{
+  "name": "functional-gymnastics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gymnastics.test.js",
+  "type": "module",
+  "scripts": {
+    "test": "node gymnastics.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulalves/functional-gymnastics-js.git"
+  },
+  "author": "Paul Alves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulalves/functional-gymnastics-js/issues"
+  },
+  "homepage": "https://github.com/paulalves/functional-gymnastics-js#readme"
+}
