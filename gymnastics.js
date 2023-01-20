@@ -25,3 +25,20 @@ export const toArray = ( xs ) => {
    }
    return result; 
 }
+
+export const link = ( array ) => { 
+   let result = null; 
+   let xs = Array.from ( array ).reverse ( );
+   
+   for (let pos = 0; pos < xs.length; ++pos) {  
+      result = linked ( xs [ pos ] ) ( result ); 
+   } 
+
+   return result; 
+}
+
+export const range = ( min ) => ( max ) => 
+      min > max 
+      ? null
+      : linked ( min ) ( range ( min + 1 ) ( max ) );
+ 
