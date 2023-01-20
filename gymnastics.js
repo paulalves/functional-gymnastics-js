@@ -41,4 +41,9 @@ export const range = ( min ) => ( max ) =>
       min > max 
       ? null
       : linked ( min ) ( range ( min + 1 ) ( max ) );
- 
+
+export const map = ( fn ) => ( xs ) => 
+      xs === null 
+      ? null 
+      : linked ( fn ( head ( xs ) ) ) ( map ( fn ) ( tail ( xs ) ) );
+

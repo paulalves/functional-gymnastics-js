@@ -1,4 +1,4 @@
-import { fact, add, sum, linked, head, tail, toArray, link, range } from './gymnastics.js' 
+import { fact, add, sum, linked, head, tail, toArray, link, range, map } from './gymnastics.js' 
 
 // fact 
 console.log ( fact ( 50 ) );
@@ -22,4 +22,8 @@ console.log ( link ( [1, 2, 3, 4, 5 ] ) );
 // range 
 console.log ( range ( 1 ) ( 100 ) );
 console.log ( toArray ( range ( 1 ) ( 100 ) ) ); 
-  
+ 
+// map 
+console.log ( toArray ( map ( fact ) ( range ( 1 ) ( 100) ) ) ) ; 
+console.log ( toArray ( map ( ( x ) => x * x ) ( range ( 1 ) ( 10 ) ) ) ); 
+
