@@ -1,4 +1,4 @@
-import { fact, add, sum, linked, head, tail, toArray, link, range, map, fizzbuzz } from './gymnastics.js' 
+import { fact, add, sum, linked, head, tail, toArray, link, range, map, fizzbuzz, aggregate, end } from './gymnastics.js' 
 
 // fact 
 console.log ( fact ( 50 ) );
@@ -31,3 +31,8 @@ console.log ( toArray ( map ( ( x ) => x * x ) ( range ( 1 ) ( 10 ) ) ) );
 console.log ( fizzbuzz ( 10 ) ) 
 console.log ( toArray ( map ( fizzbuzz ) ( range ( 1 ) ( 100 ) ) ) ); 
 
+// aggregate 
+console.log ( aggregate ( x => x * 2 ) ( link ( [1, 2, 3, 4, 5] ) ) );
+
+// end
+console.log ( end ( head ) ( range ( 1 ) ( 999 ) ) ); 

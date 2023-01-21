@@ -51,3 +51,19 @@ export const fizzbuzz = ( n ) =>
        ( n % 3 === 0 ? 'Fizz' : '') +
        ( n % 5 === 0 ? 'Buzz' : '') || n;
 
+export const aggregate = ( fn ) => ( xs ) => { 
+   let array = [];
+   
+   while ( xs ) { 
+      array.push ( fn ( head ( xs ) ) ); 
+      xs = tail ( xs ); 
+   }
+   return array; 
+}
+
+export const end = ( fn ) => ( xs ) => { 
+   while ( xs && tail ( xs ) ) { 
+      xs = tail ( xs ); 
+   } 
+   return fn ( xs ); 
+}
