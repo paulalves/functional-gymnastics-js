@@ -47,3 +47,7 @@ export const map = ( fn ) => ( xs ) =>
       ? null 
       : linked ( fn ( head ( xs ) ) ) ( map ( fn ) ( tail ( xs ) ) );
 
+export const fizzbuzz = ( n ) => 
+       ( n % 3 === 0 ? 'Fizz' : '') +
+       ( n % 5 === 0 ? 'Buzz' : '') || n;
+
